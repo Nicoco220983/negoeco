@@ -3,23 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--	<script src="/msa/webcomponentsjs/webcomponents-hi-sd-ce.js"></script> -->
-<!--
-	<script>
-		// load observe and webcomponents polyfills (only if needed)
-		var loadScript = function(src) {
-			var script = document.createElement('script');
-			script.src = src;
-			document.head.appendChild(script);
-		}
-		var supportsCustomElements = ('registerElement' in document)
-		var supportsImports = ('import' in document.createElement('link'))
-		var supportsTemplate = ('content' in document.createElement('template'))
-		if(!(supportsCustomElements && supportsImports && supportsTemplate))
-			loadScript('/msa/webcomponents-lite.min.js');
-	</script>
--->
-	<title>My Simple App</title>
+	<title>Negociation Ecologique</title>
 	<style>
 		html, body {
 			padding: 0;
@@ -34,15 +18,23 @@
 			flex: 1;
 			min-height: 0;
 		}
+		#header {
+			height: 8em;
+			background: url("/img/header.jpg");
+			background-position: center; 
+			color: white;
+			padding: 8em 0 0 2em;
+		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="/style.css"></link>
 	<script src="/msa/msa.js" type="module"></script>
 	{{{userPartial.head}}}
-	{{{headerPartial.head}}}
 	{{{contentPartial.head}}}
 </head>
 <body>
-	<!-- <div id='header' style="display:flex;">{{{headerPartial.body}}}</div> -->
+	<div id='header' style="display:flex;">
+		<h1>La Négociation Ecologique</h1>
+	</div>
 	<div id='content'>{{{contentPartial.body}}}</div>
 </body>
 </html>

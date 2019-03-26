@@ -1,7 +1,7 @@
 {
-  "name": "@mysimpleapp/msa-app",
-  "version": "0.1.1",
-  "description": "MySimplepp default app module",
+  "name": "negoeco",
+  "version": "0.1.0",
+  "description": "Negociation ecologique",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "author": "Nicolas CARREZ",
   "license": "ISC",
   "dependencies": {
-    "mustache": "^2.3.0"
+    "@mysimpleapp/msa-app": "^0.1.0"
   },
   "msaKey": "$app",
   "msaDependencies": {
