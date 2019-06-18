@@ -9,6 +9,7 @@
 			padding: 0;
 			margin: 0;
 			height: 100%;
+			background: #ffffc0;
 		}
 		body, #content {
 			display: flex;
@@ -19,21 +20,32 @@
 			min-height: 0;
 		}
 		#header {
-			height: 8em;
+			height: 12em;
+			display: flex;
+			flex-direction: row;
 			background: url("/img/header.jpg");
-			background-position: center; 
+			background-position: center;
+			background-size: cover; 
+		}
+		#header > .title {
+			flex: 1;
 			color: white;
-			padding: 8em 0 0 2em;
+			padding: 5em 0 0 2em;
+		}
+		#header > .login {
+			padding: 1em;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="/style.css"></link>
 	<script src="/msa/msa.js" type="module"></script>
+	<script src="/user/msa-user-login-box.js" type="module"></script>
 	{{{userPartial.head}}}
 	{{{contentPartial.head}}}
 </head>
 <body>
 	<div id='header' style="display:flex;">
-		<h1>La Négociation Ecologique</h1>
+		<div class="title"><h1>La Négociation Ecologique</h1></div>
+		<div class="login"><msa-user-login-box></msa-user-login-box></div>
 	</div>
 	<div id='content'>{{{contentPartial.body}}}</div>
 </body>
