@@ -32,20 +32,20 @@
 			color: white;
 			padding: 5em 0 0 2em;
 		}
-		#header > .login {
+		#header > .signin {
 			padding: 1em;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="/style.css"></link>
 	<script src="/utils/msa-utils.js" type="module"></script>
-	<script src="/user/msa-user-login-box.js" type="module"></script>
+	<script src="/user/msa-user-signin-box.js" type="module"></script>
 	{{{userPartial.head}}}
 	{{{contentPartial.head}}}
 </head>
 <body>
 	<div id='header' style="display:flex;">
 		<div class="title"><h1>La Négociation Ecologique</h1></div>
-		<div class="login"><msa-user-login-box></msa-user-login-box></div>
+		<div class="signin"><msa-user-signin-box></msa-user-signin-box></div>
 	</div>
 	<div id='content'>{{{contentPartial.body}}}</div>
 </body>
